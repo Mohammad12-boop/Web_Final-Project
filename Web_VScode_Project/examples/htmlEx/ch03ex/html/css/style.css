@@ -1,0 +1,15 @@
+
+nav a {background: yellow;}
+a:link{text-decoration: none;
+      color :red;}
+h3,p {
+    color: red;
+    border: groove;
+    font-family: serif;
+    font-style: italic;
+    font-size: 12px;
+    background: lightgreen;
+}
+article p { color : blue; background : yellow;}
+ol {list-style-type: upper-roman;}
+ul {list-style-type: square;}

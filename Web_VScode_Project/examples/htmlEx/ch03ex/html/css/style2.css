@@ -1,0 +1,9 @@
+nav{
+border: 5px solid yellow;
+background: cyan;
+}
+article {
+  color: red;
+  font-family: monospace;
+  border: groove;
+}
