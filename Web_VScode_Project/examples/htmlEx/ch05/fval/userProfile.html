@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action ="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method = "post" enctype="multipart/form-data">
+            <fieldset>
+                <legend> User Profile: </legend>
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+                <br/>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <br/>
+                  <label for="webpage">Personal Web Page:</label>
+                  <input type="url" id="webpage" name="webpage">
+                <br/>
+                <label for="telNo">Tel:</label>
+                <input type="tel" id="telNo" name="telNo" pattern="\d{2}-\d{7}" placeholder="02-2954367"required/>
+              <br/>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" minlength="8" required>
+                <br/>
+                  <label for="confirm-password">Confirm Password:</label>
+                  <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+                <br/>
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age" min="18" max="120" required>
+                <br/>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br/>
+                <br/>
+                  <label for="proficiency">Proficiency:</label>
+                  <select id="proficiency" name="proficiency" required>
+                    <option value="" selected disabled>Select Proficiency</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="ceng">Computer Engineering</option>
+                    <option value="phy">Physics</option>
+                    <option value="math">Mathematics</option>
+                    <option value="acc">Accounting</option>
+                    <option value="eco">Economic</option> 
+                    <option value="other">Other</option>
+                  </select>
+                <br/>
+                  <label for="country">Country:</label>
+                  <input type="text" id="country" name="country" list="countries" required>
+                  <datalist id="countries">
+                    <option>Palestine</option>
+                    <option>Jordan</option>
+                    <option>Lebanon</option>
+                    <option>Syria</option>
+                    <option>Iraq</option>
+                    <option>Kuwait</option>
+                  </datalist>
+                <br/>
+                  <label for="bio">Bio:</label>
+                  <textarea id="bio" name="bio" rows="5"></textarea>
+                <br/>
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            <input type = "submit" name = "action" value ="Register" />
+        </fieldset>
+        </form>
+    </body>
+</html>

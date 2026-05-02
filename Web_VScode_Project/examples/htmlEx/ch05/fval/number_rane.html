@@ -1,0 +1,20 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Student Survey</h2>
+        <form action ="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method = "post">
+            <label for="attendance">Attendance:</label>
+            <input type="range" id="attendance" name="attendance" min="0" max="100" value="80">
+            <input type="number" id="attendance-number" name="attendance-number" min="0" max="100" value="80">
+            <br/>
+            <label for="grades">Grades:</label>
+            <input type="range" id="grades" name="grades" min="0" max="100" value="75">
+            <input type="number" id="grades-number" name="grades-number" min="0" max="100" value="75">
+            <br/>
+            <button type="submit" name = "action" value="test">Submit</button>
+    </form>
+    </body>
+</html>

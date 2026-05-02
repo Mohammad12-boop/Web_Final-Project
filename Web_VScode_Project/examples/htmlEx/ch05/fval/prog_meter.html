@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Student Survey</h2>
+        <form action ="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method = "get">
+        <label for="attendance">Attendance:</label>
+        <meter id="attendance" name="attendance" min="0" max="100" value="30"></meter>
+        <br/>
+        <label for="grades">Grades:</label>
+        <progress id="grades" name="grades" min="0" max="100" value="75"></progress>
+        <br/>
+        <input type="submit" name ="action" value = "Submit"/>
+    </form>
+    </body>
+</html>

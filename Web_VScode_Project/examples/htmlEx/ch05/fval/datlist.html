@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action ="http://comp334.studentswebprojects.ritaj.ps/util/process.php" method = "post">
+            <fieldset>
+                <legend> Bus Ticket: </legend>
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" list="cities" placeholder="Enter departure city"/>
+                <br/>
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" list="cities" placeholder="Enter destination city"/> 
+                <br/>
+                  <datalist id="cities">
+                  <option value="Al-Quds"/>
+                  <option value="Ramallah"/>
+                  <option value="Nablus"/>
+                  <option value="Al-Khalil"/>
+                  <option value="Gaza"/>
+                  <option value="Jenien"/>
+                  <option value="Tulkarm"/>
+                  <option value="Bethlehem"/>
+                  <option value="Birzeit"/>
+                </datalist>
+            <input type = "submit" name = "action" value ="Purchase" />
+        </fieldset>
+        </form>
+    </body>
+</html>
