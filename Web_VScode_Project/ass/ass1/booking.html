@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Rihla Travel - Booking/Contact</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Al-Rihla Travel - Booking/Contact</h1>
+        <figure>
+            <img src="./images/Logo_Al-Rihla.jpg" alt="Al-Rihla Travel logo showing Dome of the Rock and Palestinian colors" width="220" height="220" >
+            <figcaption>Where Every Journey Tells a Palestinian Story</figcaption>
+        </figure>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./destinations.html">Destinations</a></li>
+                <li><a href="./tour-packages.html">Tour Packages</a></li>
+                <li><a href="./booking.html">Booking/Contact</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Booking / Contact Form</h2>
+            <p>
+                Please fill in the form below to request a booking or to contact Al-Rihla Travel
+                about one of our tour packages.
+            </p>
+
+            <form  method="post" action="#">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <p>
+                        <label for="name">Full Name:</label> 
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="email">Email:</label> 
+                        <input type="email" id="email" name="email" required>
+                   
+                        <label for="phone">Phone Number:</label> 
+                        <input type="tel" id="phone" name="phone" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Travel Dates</legend>
+
+                    <p>
+                        <label for="start-date">Travel Start Date:</label> 
+                        <input type="date" id="start-date" name="start-date" required>
+                    
+                        <label for="end-date">Travel End Date:</label> 
+                        <input type="date" id="end-date" name="end-date" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Destination and Travelers</legend>
+
+                    <p>
+                        <label for="destination">Preferred Destination:</label><br>
+                        <select id="destination" name="destination" required>
+                            <option value="">-- Please choose a destination --</option>
+                            <option value="jerusalem">Jerusalem</option>
+                            <option value="bethlehem">Bethlehem</option>
+                            <option value="hebron">Hebron</option>
+                            <option value="nablus">Nablus</option>
+                            <option value="jericho">Jericho</option>
+                            <option value="ramallah">Ramallah</option>
+                            <option value="multiple">Multiple cities/Tour package</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="travelers">Number of Travelers:</label><br>
+                        <select id="travelers" name="travelers" required>
+                            <option value="">-- Please choose --</option>
+                            <option value="1">1 traveler</option>
+                            <option value="2">2 travelers</option>
+                            <option value="3-4">3–4 travelers</option>
+                            <option value="5-8">5–8 travelers</option>
+                            <option value="9-12">9–12 travelers</option>
+                            <option value="13-plus">13 or more travelers</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tour Type</legend>
+
+                    <p>
+                        <label>
+                        <input type="radio" name="tour-type" value="group" required>
+                        Group tour
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                        <input type="radio" name="tour-type" value="private">
+                        Private tour
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                        <input type="radio" name="tour-type" value="custom">
+                        Custom tour
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Services</legend>
+
+                    <p>
+                        <label>
+                        <input type="checkbox" name="services" value="hotel-booking">
+                        Hotel booking
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                        <input type="checkbox" name="services" value="tour-guide">
+                        Tour guide
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                        <input type="checkbox" name="services" value="transportation">
+                        Transportation
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                        <input type="checkbox" name="services" value="meals">
+                        Meals
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Special Requests/Comments</legend>
+
+                    <p>
+                        <label for="requests">Special requests or comments:</label><br>
+                        <textarea id="requests" name="requests" rows="5" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Submit Your Request</legend>
+
+                    <p>
+                        <input type="submit" value="Submit Booking Request">
+                        <input type="reset" value="Reset Form">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            &copy; 2025 Al-Rihla Travel - Ramallah, Palestine
+            <br>
+            Email: <a href="mailto:1220951@student.birzeit.edu">1220951@student.birzeit.edu</a>
+            <br>
+            Phone: +970-59-2456355
+        </p>
+    </footer>
+    
+</body>
+</html>
